@@ -154,6 +154,7 @@ Operance/
 │
 └── CI-FAILURE-REPORT.md
 ```
+![alt text](images/files.png)
 ## Running Tests
 Run the CI pipeline:
 ```
