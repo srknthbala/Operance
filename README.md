@@ -292,4 +292,3 @@ Success Criteria
 ## Notes
 - Timer should start from Start Session, not CI execution
 - AI relies on screen context and prompt injection, not direct file execution
-- Grading API is independent from AI scoring
