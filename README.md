@@ -201,7 +201,7 @@ Outputs:
 - Storage: 5 GB available space
 
 ### 1. Download these files from the repository and place them into a folder:
-**DOWNLOAD** `env1.ova` **FROM THE GOOGLE DRIVE LINK IN** `env1.ova.md`)
+**DOWNLOAD** `env1.ova` **FROM THE GOOGLE DRIVE LINK IN** `env1.ova.md`
 
 ![alt text](images/novainstallerfolder.png)![alt text](images/installationfolder.png)
 
@@ -222,7 +222,7 @@ Dependencies:
 ### Eventually, you should see this:
 ![alt text](images/cmdimport.png)
 
-### Press `Emter` with the CMD window highlighted to close it, and the training environment should be active in another window.
+### Press `Enter` with the CMD window highlighted to close it, and the training environment should be active in another window.
 ![alt text](images/loading.png)
   
 ## Example Scenario
