@@ -76,6 +76,7 @@ The AI chat window is a wrapper around Amazon Nova (Bedrock runtime).
 - Responds with short, direct guidance
 
 The AI does not expose solutions. It only answers what is asked.
+
 ![alt text](images/aiwindow.png)
 ## Grading System
 
