@@ -1,9 +1,10 @@
 
 # Operance
+Operance is a debugging simulation platform that drops users into a realistic cloud engineering environment with a broken CI pipeline, live backend services, and an AI debug coach. 
 
-Operance is a debugging simulation platform that runs users through realistic engineering workflows and evaluates how they solve issues in a controlled environment.
+It tracks how the user investigates and resolves the failure, then scores their performance based on time, efficiency, and decision-making throughout the session.
 
-It recreates a typical developer setup with CI failures, backend bugs, and logs, then tracks how the user investigates and fixes the problem.
+Companies could use it as a prerequisite certification for job applicants, with each environment tailored to the specific role and stack of the position they are hiring for.
 
 ![alt text](images/desktop.png)![alt text](images/aws.png)
 
