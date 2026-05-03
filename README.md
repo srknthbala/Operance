@@ -172,15 +172,39 @@ Outputs:
 `HTML (Slack UI rendering)`
 
 `X11 screen capture`
-## Installation
 
-Install my-project with npm
+## Installation (Windows Only)
 
-```bash
-  npm install my-project
-  cd my-project
-```
-    
+### Requirements
+
+- Virtualization must be enabled. Instructions can be found at https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-c5578302-6e43-4b4b-a449-8ced115f58e1
+- CPU: 2 cores minimum, 4 cores recommended
+- RAM: 4 GB minimum, 8 GB recommended
+- Storage: 5 GB available space
+
+### 1. Download these files from the repository and place them into a folder:
+![alt text](images/novainstallerfolder.png)![alt text](images/installationfolder.png)
+
+### 2. Right-click on `NovaWorkSimSetup.exe` and click `Run as Administrator`. Allow permissions for the pop-up
+![alt text](images/administrator.png)
+
+### 3. A Command Prompt tab will open. It will review if you have the required specs and dependencies. If you do not have the dependencies, it will automatically download them for you.
+Dependencies:
+- Latest version of VC++ Redistributable
+- pip
+- pywin32
+- python or python3
+- VirtualBox
+
+### After, it will say `Importing OVA...`. It may remain on this for a few minutes. Here is where the minimum spec check will occur. 
+![alt text](images/cmd.png)
+
+### Eventually, you should see this:
+![alt text](images/cmdimport.png)
+
+### Press any button with the CMD tab highlighted to close it, and the training environment should be active in another window.
+![alt text](images/loading.png)
+  
 ## Example Scenario
 ![alt text](images/tasksmd.png)
 
