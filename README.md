@@ -8,13 +8,12 @@ Companies could use it as a prerequisite certification for job applicants, with 
 
 ![alt text](images/desktop.png)![alt text](images/aws.png)
 
+## Note
+This is a very prototypical version of Operance that was developed for the Amazon Nova AI Hackathon. Only the Amazon -> Software Engineer -> EC2 Worker Training Environment has been developed so far
+
+_Even though this project was developed for the hackathon, we didn't end up submitting it to the hackathon_
 
 
-## Overview
-
-Operance is a debugging simulation platform that runs inside a controlled development environment and evaluates how a user investigates and fixes system failures.
-
-It combines a simulated CI pipeline, backend services, and an AI assistant powered by Amazon Nova. User performance is tracked and scored through a grading API backed by AWS Lambda.
 ## Features
 - CI pipeline simulation using pytest and shell scripting
 - Slack-style failure logging rendered in HTML
