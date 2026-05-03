@@ -84,7 +84,7 @@ After CI passes, run_ci.sh sends a POST request to a grading API.
 
 Current temporary endpoint:
 ```
-https://operance.app/results
+operance-nova-hackathon.vercel.app
 ```
 Submission includes:
 ```
@@ -123,11 +123,14 @@ CI Pipeline Performance: 100
 ## Where to See Results
 Results are available at:
 ```
-https://operance.app/results
+operance-nova-hackathon.vercel.app
 ```
 ![alt text](images/home.png)
+
 ![alt text](images/select2.png)
+
 ![alt text](images/select.png)
+
 ![alt text](images/submissions.png)
 
 Each submission is logged with:
@@ -135,6 +138,7 @@ Each submission is logged with:
 - scenario
 - score breakdown
 - summary
+
 ![alt text](images/score.png)
 
 ## Environment Design  Structure
