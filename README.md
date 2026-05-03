@@ -5,6 +5,7 @@ Operance is a debugging simulation platform that runs users through realistic en
 
 It recreates a typical developer setup with CI failures, backend bugs, and logs, then tracks how the user investigates and fixes the problem.
 
+![alt text](images/desktop.png)![alt text](images/aws.png)
 
 
 
@@ -16,6 +17,8 @@ It combines a simulated CI pipeline, backend services, and an AI assistant power
 ## Features
 - CI pipeline simulation using pytest and shell scripting
 - Slack-style failure logging rendered in HTML
+![alt text](images/slack.png) ![alt text](images/aws.png)
+
 - AI chat window backed by Amazon Nova (via Bedrock runtime)
 - Screen capture loop that feeds context into the AI
 - Scenario-based backend bugs (for example EC2 validation logic)
@@ -74,6 +77,7 @@ The AI chat window is a wrapper around Amazon Nova (Bedrock runtime).
 - Responds with short, direct guidance
 
 The AI does not expose solutions. It only answers what is asked.
+![alt text](images/aiwindow.png)
 ## Grading System
 
 After CI passes, run_ci.sh sends a POST request to a grading API.
@@ -151,7 +155,11 @@ Run the CI pipeline:
 Outputs:
 - test results
 - CI status file
+![alt text](images/status.png)
+
 - Slack UI updates
+![alt text](images/slack.png)
+
 - dashboard submission
 ## Tech Stack
 `Python (Flask, pytest)`
@@ -175,6 +183,8 @@ Install my-project with npm
 ```
     
 ## Example Scenario
+![alt text](images/tasksmd.png)
+
 EC2 Launch Validation – Integration Test Investigation
 Team: EC2 Launch Validation
 Priority: P2
