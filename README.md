@@ -88,9 +88,9 @@ The AI does not expose solutions. It only answers what is asked.
 After CI passes, run_ci.sh sends a POST request to a grading API.
 
 Current temporary endpoint:
-```
-operance-nova-hackathon.vercel.app
-```
+
+[link text](operance-nova-hackathon.vercel.app)
+
 Submission includes:
 ```
 tasks_completed
@@ -127,9 +127,9 @@ CI Pipeline Performance: 100
 ```
 ## Where to See Results
 Results are available at:
-```
-operance-nova-hackathon.vercel.app
-```
+
+[link text](operance-nova-hackathon.vercel.app)
+
 ![alt text](images/home.png)
 
 ![alt text](images/select2.png)
