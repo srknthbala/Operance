@@ -125,11 +125,18 @@ Results are available at:
 ```
 https://operance.app/results
 ```
+![alt text](images/home.png)
+![alt text](images/select2.png)
+![alt text](images/select.png)
+![alt text](images/submissions.png)
+
 Each submission is logged with:
 - timestamp
 - scenario
 - score breakdown
 - summary
+![alt text](images/score.png)
+
 ## Environment Design  Structure
 ```
 Operance/
