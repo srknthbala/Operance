@@ -5,6 +5,7 @@ Operance is a debugging simulation platform that runs users through realistic en
 
 It recreates a typical developer setup with CI failures, backend bugs, and logs, then tracks how the user investigates and fixes the problem.
 
+![alt text](images/desktop.png)![alt text](images/aws.png)
 
 
 
@@ -16,6 +17,8 @@ It combines a simulated CI pipeline, backend services, and an AI assistant power
 ## Features
 - CI pipeline simulation using pytest and shell scripting
 - Slack-style failure logging rendered in HTML
+![alt text](images/slack.png) ![alt text](images/aws.png)
+
 - AI chat window backed by Amazon Nova (via Bedrock runtime)
 - Screen capture loop that feeds context into the AI
 - Scenario-based backend bugs (for example EC2 validation logic)
@@ -63,7 +66,6 @@ It combines a simulated CI pipeline, backend services, and an AI assistant power
 - Includes score breakdown and feedback
 - Accessible through the results site
 ## AI Debug Window
-![alt text](images/Screenshot 2026-03-16 005105.png)
 The AI chat window is a wrapper around Amazon Nova (Bedrock runtime).
 - Sends user messages along with current screen capture
 - Injects relevant file context:
@@ -74,6 +76,7 @@ The AI chat window is a wrapper around Amazon Nova (Bedrock runtime).
 - Responds with short, direct guidance
 
 The AI does not expose solutions. It only answers what is asked.
+![alt text](images/aiwindow.png)
 ## Grading System
 
 After CI passes, run_ci.sh sends a POST request to a grading API.
@@ -151,7 +154,11 @@ Run the CI pipeline:
 Outputs:
 - test results
 - CI status file
+![alt text](images/status.png)
+
 - Slack UI updates
+![alt text](images/slack.png)
+
 - dashboard submission
 ## Tech Stack
 `Python (Flask, pytest)`
@@ -165,16 +172,42 @@ Outputs:
 `HTML (Slack UI rendering)`
 
 `X11 screen capture`
-## Installation
 
-Install my-project with npm
+## Installation (Windows Only)
 
-```bash
-  npm install my-project
-  cd my-project
-```
-    
+### Requirements
+
+- Virtualization must be enabled. Instructions can be found at https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-c5578302-6e43-4b4b-a449-8ced115f58e1
+- CPU: 2 cores minimum, 4 cores recommended
+- RAM: 4 GB minimum, 8 GB recommended
+- Storage: 5 GB available space
+
+### 1. Download these files from the repository and place them into a folder:
+![alt text](images/novainstallerfolder.png)![alt text](images/installationfolder.png)
+
+### 2. Right-click on `NovaWorkSimSetup.exe` and click `Run as Administrator`. Allow permissions for the pop-up
+![alt text](images/administrator.png)
+
+### 3. A Command Prompt tab will open. It will review if you have the required specs and dependencies. If you do not have the dependencies, it will automatically download them for you.
+Dependencies:
+- Latest version of VC++ Redistributable
+- pip
+- pywin32
+- python or python3
+- VirtualBox
+
+### After, it will say `Importing OVA...`. It may remain on this for a few minutes. Here is where the minimum spec check will occur. 
+![alt text](images/cmd.png)
+
+### Eventually, you should see this:
+![alt text](images/cmdimport.png)
+
+### Press any button with the CMD tab highlighted to close it, and the training environment should be active in another window.
+![alt text](images/loading.png)
+  
 ## Example Scenario
+![alt text](images/tasksmd.png)
+
 EC2 Launch Validation – Integration Test Investigation
 Team: EC2 Launch Validation
 Priority: P2
