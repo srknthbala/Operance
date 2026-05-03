@@ -26,50 +26,50 @@ _Even though this project was developed for the hackathon, we didn't end up subm
 - Time tracking and session metrics
 ## How It Works
 1. User clicks Start Session
-- This triggers a backend endpoint that resets the session and starts the timer
+  - This triggers a backend endpoint that resets the session and starts the timer
 2. The AI debug window activates
-- This is a Nova-based assistant connected through Bedrock
-- It continuously receives screen captures from the environment
-- It's preloaded with the specific scenario context and relevant files
+  - This is a Nova-based assistant connected through Bedrock
+  - It continuously receives screen captures from the environment
+  - It's preloaded with the specific scenario context and relevant files
 3. The AI monitors user behavior in real time
-- Detects what the user is doing based on screen content
-- Tracks progress through expected steps
-- Identifies when the user reaches key checkpoints
+  - Detects what the user is doing based on screen content
+  - Tracks progress through expected steps
+  - Identifies when the user reaches key checkpoints
 4. The AI provides guidance and enforcement
-- Gives hints when the user is stuck or taking too long
-- Responds to direct questions about the scenario
-- Automatically flags incorrect actions
-- Warns the user if they are working in the wrong place
-- Repeated incorrect behavior can affect scoring
+  - Gives hints when the user is stuck or taking too long
+  - Responds to direct questions about the scenario
+  - Automatically flags incorrect actions
+  - Warns the user if they are working in the wrong place
+  - Repeated incorrect behavior can affect scoring
 5. User runs the CI pipeline
 
-```
-./run_ci.sh
-```
-- Runs integration tests
-- Outputs logs and failure messages
-- Updates Slack-style UI
-- Writes status to `ci_status.json`
+  ```
+  ./run_ci.sh
+  ```
+  - Runs integration tests
+  - Outputs logs and failure messages
+  - Updates Slack-style UI
+  - Writes status to `ci_status.json`
 
 ![alt text](images/runsh.png)
 
 6. User investigates and fixes the issue
-- Uses logs, test files, and backend code
-- Applies fix and re-runs CI
+  - Uses logs, test files, and backend code
+  - Applies fix and re-runs CI
 
 ![alt text](images/vscode.png)
 
 7. CI passes
-- System detects success through `ci_status.json`
-- Submission is sent to the grading API
+  - System detects success through `ci_status.json`
+  - Submission is sent to the grading API
 8. Score is calculated using multiple signals
-- Whether the test was successfully fixed
-- Total time from Start Session
-- Number of interactions with the AI
-- AI analysis of the entire session (behavior, decisions, mistakes)
+  - Whether the test was successfully fixed
+  - Total time from Start Session
+  - Number of interactions with the AI
+  - AI analysis of the entire session (behavior, decisions, mistakes)
 9. Results are posted to the dashboard
-- Includes score breakdown and feedback
-- Accessible through the results site
+  - Includes score breakdown and feedback
+  - Accessible through the results site
 ## AI Debug Window
 The AI chat window is a wrapper around Amazon Nova (Bedrock runtime).
 - Sends user messages along with current screen capture
