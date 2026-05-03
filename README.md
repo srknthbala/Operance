@@ -250,7 +250,7 @@ Observed Behavior:
 
 CI Failure:
 
-"AssertionError: SSM command should succeed after readiness."
+`AssertionError: SSM command should succeed after readiness.`
 
 -------------------------------------------------------------------------------------
 
