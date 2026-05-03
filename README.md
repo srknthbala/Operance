@@ -50,10 +50,15 @@ _Even though this project was developed for the hackathon, we didn't end up subm
 - Outputs logs and failure messages
 - Updates Slack-style UI
 - Writes status to `ci_status.json`
+- 
+![alt text](images/runsh.png)
 
 6. User investigates and fixes the issue
 - Uses logs, test files, and backend code
 - Applies fix and re-runs CI
+
+![alt text](images/vscode.png)
+
 7. CI passes
 - System detects success through `ci_status.json`
 - Submission is sent to the grading API
