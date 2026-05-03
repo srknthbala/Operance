@@ -202,6 +202,7 @@ Outputs:
 
 ### 1. Download these files from the repository and place them into a folder:
 **DOWNLOAD** `env1.ova` **FROM THE GOOGLE DRIVE LINK IN** `env1.ova.md`)
+
 ![alt text](images/novainstallerfolder.png)![alt text](images/installationfolder.png)
 
 ### 2. Right-click on `NovaWorkSimSetup.exe` and click `Run as Administrator`. Allow permissions for the pop-up
