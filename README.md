@@ -200,7 +200,7 @@ Outputs:
 - RAM: 4 GB minimum, 8 GB recommended
 - Storage: 5 GB available space
 
-### 1. Download these files from the repository and place them into a folder:
+### 1. Download these 3 files from the repository and place them into a folder:
 **DOWNLOAD** `env1.ova` **FROM THE GOOGLE DRIVE LINK IN** `env1.ova.md`
 
 ![alt text](images/novainstallerfolder.png)![alt text](images/installationfolder.png)
