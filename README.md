@@ -202,7 +202,7 @@ Dependencies:
 ### Eventually, you should see this:
 ![alt text](images/cmdimport.png)
 
-### Press any button with the CMD tab highlighted to close it, and the training environment should be active in another window.
+### Press `Emter` with the CMD window highlighted to close it, and the training environment should be active in another window.
 ![alt text](images/loading.png)
   
 ## Example Scenario
