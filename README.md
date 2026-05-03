@@ -66,7 +66,6 @@ It combines a simulated CI pipeline, backend services, and an AI assistant power
 - Includes score breakdown and feedback
 - Accessible through the results site
 ## AI Debug Window
-![alt text](images/aiwindow.png)
 The AI chat window is a wrapper around Amazon Nova (Bedrock runtime).
 - Sends user messages along with current screen capture
 - Injects relevant file context:
