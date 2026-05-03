@@ -9,7 +9,7 @@ Companies could use it as a prerequisite certification for job applicants, with 
 ![alt text](images/desktop.png)![alt text](images/aws.png)
 
 ## Note
-This is a very prototypical version of Operance that was developed for the Amazon Nova AI Hackathon. Only the Amazon -> Software Engineer -> EC2 Worker Training Environment has been developed so far
+This is a very prototypical version of Operance that was developed for the Amazon Nova AI Hackathon. Only the *Amazon -> Software Engineer -> EC2 Worker* training environment has been developed so far. Scaling Operance would mean adding more companies as well as their respective fields and positions, such as Cybersecurity roles/training environments.
 
 _Even though this project was developed for the hackathon, we didn't end up submitting it to the hackathon_
 
